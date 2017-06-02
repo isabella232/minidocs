@@ -46,7 +46,7 @@ module.exports = function (state, prev, send) {
     </div>`
   }
 
-  return html`<div class="${prefix} minidocs-content">
+  return html`<div class="${prefix} pa3 ph5-ns pv4-ns">
     ${link}
     ${contributorWrapper}
     ${contentWrapper}

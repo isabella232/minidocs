@@ -1,60 +1,37 @@
 :host {
-  width: 100%;
+
 }
 
-.minidocs-logo {
-  width: 100%;
-}
-
-.minidocs-header {
-  width: 40%;
-  max-width: 250px;
-  margin: 0px auto;
-}
-
-.h1 {
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.h1:before {
-  content: '# '
-}
-
-h1 a {
-  color: #505050;
+a.content-link {
+  padding: 6px 8px 6px 5px;
+  margin-bottom: 1px;
+  cursor: pointer;
   text-decoration: none;
+  color: #505050;
+  display: block;
+  border-left: 3px solid #eee;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-h1 a:hover {
-  color: #222;
+a.content-link.active {
+  background-color: #fff;
+  border-left: 3px solid rgb(200,200,200);
 }
 
-@media (min-width: 600px) {
-  :host {
-    width: 21%;
-    padding: 0px 20px 20px 35px;
-    display: inline-block;
-    padding-bottom: 3%;
-    overflow-y: scroll;
-    background: rgb(240,240,240);
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-  }
+a.content-link:hover {
+  background-color: #fff;
+  border-left: 3px solid rgb(200,200,200);
+}
 
-  .minidocs-header {
-    width: 100%;
-    max-width: 250px;
-    margin: 0px auto;
-  }
+.minidocs-menu-toc {
+  margin-top:-2px;
+  background-color: #f8f8f8;
+  border-left: 3px solid rgb(200,200,200);
+}
 
-  .minidocs-logo {
-    width: 100%;
-    max-width: 250px;
-  }
+.minidocs-menu-toc a.content-link {
+  border-left:0px;
+  padding: 4px 4px 4px 10px;
 }

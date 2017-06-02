@@ -52,33 +52,6 @@ a.content-link:hover {
   border-left: 3px solid rgb(200,200,200);
 }
 
-.minidocs-menu-toggle {
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border: 0px;
-  background: transparent;
-  padding-left: 20px;
-  line-height: 0.9;
-  z-index: 2000;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.minidocs-menu-toggle:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow:
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
-}
-
 .minidocs-menu-toc {
   margin-top:-2px;
   background-color: #f8f8f8;

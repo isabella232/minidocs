@@ -2,8 +2,7 @@ module.exports = {
   'overview': {
     'about': {
       file: 'about.md',
-      link: 'http://github.com/freeman-lab/minidocs',
-      contributors: ['@sethvincent', '@yoshuawuyts', '@freeman-lab', '@fraserxu']
+      link: 'http://github.com/freeman-lab/minidocs'
     }
   },
   'animals': {

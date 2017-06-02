@@ -53,6 +53,9 @@ module.exports = function (opts) {
       size: 'small'
     },
     reducers: {
+      toggle: function (data, state) {
+        return {open: !state.open}
+      },
       set: function (data, state) {
         return data
       },

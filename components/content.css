@@ -1,9 +1,12 @@
+:host {
+  max-width: 48em;
+  width: 100%;
+}
+
 a.markdown-link {
   color: rgb(173,173,173);
   background: rgb(240,240,240);
   display: inline-block;
-  position: absolute;
-  margin-top: -50px;
   padding: 3px 5px;
   text-decoration: none;
 }
@@ -37,7 +40,6 @@ div.contributor-wrapper:hover {
 div.contributor-container {
   width: 60%;
   right: 40px;
-  margin-top: -50px;
   position: relative;
   display: inline-block;
   text-align: right;

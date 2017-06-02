@@ -1,25 +1,50 @@
+/*
+  flexbox layout via: https://stackoverflow.com/questions/33514047/flexbox-holy-grail-layout-fixed-header-fixed-left-nav-fluid-content-area-fix
+  https://fiddle.jshell.net/JonMoore/LLfcL28u/24/show/;
+ */
+
 :host {
-  width: 100%;
-  padding: 40px;
-  vertical-align: top;
-  display: inline-block;
-  box-sizing: border-box;
+
 }
 
-@media (min-width: 600px) {
-  :host {
+/*
+  Add -flex wrappers so users do not overwrite flex styles.
+ */
+
+.minidocs-header-flex {
+  z-index: 5;
+  flex: 0 64px;
+  line-height: 64px;
+}
+
+.minidocs-main-flex {
+  flex: 1;
+}
+
+.minidocs-sidebar-flex {
+  flex: 0 0 256px;
+}
+
+.minidocs-content-flex {
+  flex: 1 1 100px;
+}
+
+@media (max-width: 800px) {
+  .minidocs-sidebar-flex {
     position: absolute;
-    right: 0;
-    width: 73%;
-    padding: 125.9px 8% 70.6px 8%;
-    vertical-align: top;
-    display: inline-block;
+    top: 0;
+    left: -256px;
+    width: 256px;
+    height: 100%;
+    display: block;
+    transition: all 0.2s ease;
+    overflow: auto;
+    z-index:1000;
+  }
+
+  .minidocs-sidebar-flex.open {
+    left: 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.24);
   }
 }
 
-@media (min-width: 900px) {
-  :host {
-    width: 77%;
-    padding: 125.9px 6% 70.6px 6%;
-  }
-}
