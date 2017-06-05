@@ -15,7 +15,7 @@ module.exports = (state, prev, send) => {
       </div>
       <div class="minidocs-header-nav flex-grow flex items-center tr ttu">
         <a class="minidocs-header-link white dim link dn dib-ns mr3-ns" href="/install" title="Install">Install</a>
-        <a class="minidocs-header-link white dim link dib mr3-ns" href="http://datproject.org/explore" title="Explore">Explore</a>
+        <a class="minidocs-header-link white dim link dib mr3-ns" href="http://datproject.org/" title="Home">Home</a>
       </a>
     </nav>
   </header>`
