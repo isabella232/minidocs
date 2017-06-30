@@ -36,6 +36,8 @@ module.exports = function (opts) {
             send('location:setLocation', { location: href }, done)
             window.history.pushState(null, null, href)
             document.body.scrollTop = 0
+            var content = document.getElementById('minidocs-content')
+            content.scrollTop = 0
           } else {
             window.location.hash = node.hash
             var el = document.querySelector(node.hash)

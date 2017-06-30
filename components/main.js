@@ -15,7 +15,7 @@ module.exports = function (state, prev, send) {
       </div>
       <main class="minidocs-main-flex flex">
         ${createSidebar()}
-        <div class="minidocs-content-flex order-1 overflow-auto">
+        <div id="minidocs-content" class="minidocs-content-flex order-1 overflow-auto">
           ${content(state, prev, send)}
         </div>
       </main>
